@@ -19,13 +19,13 @@ gem 'phony_rails'
 gem 'twilio-ruby'
 
 
-# group :development, :test do
-#   gem 'sqlite3'
-# end
+group :development, :test do
+  gem 'sqlite3'
+end
 
 # group :production do
 #   gem 'pg'
 # end
 
 gem 'pg'
-gem 'sqlite3'
+

@@ -55,7 +55,7 @@ class TwilioController < ApplicationController
     # of these documents
     response = Twilio::TwiML::Response.new do |r|
       # r.Say 'If this were a real click to call implementation, you would be connected to an agent at this point.', :voice => 'alice'
-      r.Dial '+18479452629'
+      # r.Dial '+18479452629'
     end
     render text: response.text
   end

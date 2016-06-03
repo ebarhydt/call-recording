@@ -28,3 +28,4 @@ gem 'twilio-ruby'
 # end
 
 gem 'pg'
+gem 'sqlite3'

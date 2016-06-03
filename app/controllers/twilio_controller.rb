@@ -26,10 +26,10 @@ class TwilioController < ApplicationController
     # Validate contact
     if contact.valid?
 
-      @client = Twilio::REST::Client.new @@twilio_sid, @@twilio_token
+      @client = Twilio::REST::Client.new 'ACd67c324e3724e949de870352e6288273', 'f54c2d610b75cb050497e5560f165301'
       # Connect an outbound call to the number submitted
       @call = @client.calls.create(
-        :from => @@twilio_number,
+        :from => '+12242315467',
         :to => contact.phone,
         :url => connect_url # Fetch instructions from this URL when the call connects
       )
